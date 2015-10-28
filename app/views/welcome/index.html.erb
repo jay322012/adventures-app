@@ -1,0 +1,18 @@
+<div class= 'index_title'>
+    <h1>World Visions</h1>
+    <p>When you travel and expand the mind, you'll be suprised about what you find.</p>
+</div>
+
+<div class = 'pic'>
+    <%= @pictures.each do |pic| %>
+        <%= image_tag pic,  
+                                class: 'img-responsive center-block',
+                                height: 500,
+                                width: 500 %>
+        <br>
+    <% end %>
+    
+    <div id="map-canvas"></div>
+
+</div>
+
